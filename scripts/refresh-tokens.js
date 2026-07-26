@@ -6,6 +6,10 @@ const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
 
+// cnnturk (duhnet.tv) kasıtlı olarak burada YOK: onun token'ı, isteği yapan
+// IP'ye kilitleniyor. GitHub Actions'ın IP'sinden alınan bir cnnturk linki
+// TV'de (farklı IP) 403 veriyor — bu yüzden cnnturk sadece TV ile aynı ağdan
+// (yani elle, "npx"li bir oturumdan) yenilenebilir.
 const CHANNELS = [
   { id: 'trt1', pageUrl: 'https://www.trt1.com.tr/canli-yayin' },
   { id: 'showtv', pageUrl: 'https://www.showtv.com.tr/canli-yayin' },
@@ -15,8 +19,7 @@ const CHANNELS = [
   { id: 'tv8', pageUrl: 'https://www.tv8.com.tr/canli-yayin' },
   { id: 'nowtv', pageUrl: 'https://www.nowtv.com.tr/canli-yayin' },
   { id: 'ntv', pageUrl: 'https://www.ntv.com.tr/canli-yayin/ntv' },
-  { id: 'haberturk', pageUrl: 'https://www.haberturk.com/canliyayin' },
-  { id: 'cnnturk', pageUrl: 'https://www.cnnturk.com/canli-yayin' }
+  { id: 'haberturk', pageUrl: 'https://www.haberturk.com/canliyayin' }
 ];
 
 const OUTPUT_PATH = path.join(__dirname, '..', 'overrides.json');
