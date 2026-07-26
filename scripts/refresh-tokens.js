@@ -49,7 +49,14 @@ async function sniffChannel(browser, channel) {
     await context.close();
   }
 
+  // daioncdn.net kaynaklı linkler test edildi ve isteği yapan IP'ye kilitli
+  // DEĞİL (GitHub Actions'tan alınıp TV'de sorunsuz çalışıyor). Bazı kanallar
+  // (örn. atv) bazen bunun yerine ercdn.net/duhnet.tv gibi IP'ye kilitli bir
+  // CDN'e yönlendirilebiliyor — o durumda TV'de 403 alınıyor. Bu yüzden aynı
+  // kalitede birden fazla aday varsa daioncdn.net olanı tercih ediyoruz.
   const best =
+    found.find((u) => /daioncdn\.net/.test(u) && /1080p/.test(u)) ||
+    found.find((u) => /daioncdn\.net/.test(u) && /720p/.test(u)) ||
     found.find((u) => /1080p/.test(u)) ||
     found.find((u) => /720p/.test(u)) ||
     found[0] ||
