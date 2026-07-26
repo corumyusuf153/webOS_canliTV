@@ -1,0 +1,38 @@
+name: Refresh channel tokens
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install playwright@latest
+          npx playwright install --with-deps chromium
+
+      - name: Sniff fresh stream URLs
+        run: node scripts/refresh-tokens.js
+
+      - name: Commit if changed
+        run: |
+          git config user.name "canlitv-token-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if ! git diff --quiet -- overrides.json; then
+            git add overrides.json
+            git commit -m "Refresh channel stream tokens"
+            git push
+          else
+            echo "No changes."
+          fi

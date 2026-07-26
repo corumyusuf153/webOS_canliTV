@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0, user-scalable=no" />
+    <title>Canlı TV</title>
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+    <!-- Kanal ızgarası -->
+    <main id="grid-view" class="grid-view">
+        <header class="grid-header">
+            <span class="grid-header__logo">▶</span>
+            <h1>Canlı TV</h1>
+            <button id="refresh-btn" class="refresh-btn" type="button">⟳ Yenile</button>
+            <span id="refresh-status" class="refresh-status"></span>
+        </header>
+
+        <ul id="channel-grid" class="channel-grid" role="list"></ul>
+
+        <footer class="grid-hint">
+            <span>◀ ▶ ▲ ▼ Gezin</span>
+            <span>OK İzle</span>
+            <span>Yeşil tuş: Linkleri yenile</span>
+        </footer>
+    </main>
+
+    <!-- Tam ekran kanal (oynatıcı) görünümü -->
+    <section id="player-view" class="player-view player-view--hidden">
+        <div id="player-frame-holder" class="player-frame-holder"></div>
+        <div id="player-overlay" class="player-overlay">
+            <span id="player-overlay-name" class="player-overlay__name"></span>
+            <span class="player-overlay__hint">Geri: kanallara dön</span>
+        </div>
+        <div id="player-loading" class="player-loading">Yükleniyor…</div>
+        <div id="player-error" class="player-error is-hidden">
+            <p id="player-error-text">Yayın açılamadı.</p>
+            <p class="player-error__hint">Geri: kanallara dön</p>
+        </div>
+    </section>
+
+    <script src="js/vendor/hls.min.js"></script>
+    <script src="js/channels.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
