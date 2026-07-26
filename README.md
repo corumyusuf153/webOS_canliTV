@@ -12,10 +12,14 @@ arayüzü olmadan, sade bir "canlı yayın izleme" ekranı.
 
 **Bilinmesi gereken (önemli):** Bu yayın linkleri, kanalların kendi player'larının
 tarayıcıdan doğal olarak çektiği, süreli/imzalı token'lar içerir. Zamanla (birkaç gün
-ile birkaç hafta arası, kanaldan kanala değişebilir) geçersiz olabilirler. Bir kanal
-"Yayın açılamadı" hatası verirse, bana ("Claude'a") söyle — güncel linkleri tekrar
-toplayıp `js/channels.js`'i güncelleyip TV'ye yeniden kurarım. Bu, uygulamanın normal
-bakım döngüsü, bir hata değil.
+ile birkaç hafta arası, kanaldan kanala değişebilir) geçersiz olabilirler.
+
+Bunun için otomatik bir çözüm var: [GitHub Actions üzerinde](.github/workflows/refresh-tokens.yml)
+her 4 saatte bir çalışan bir görev, tüm kanalların sitelerini ziyaret edip taze linkleri
+`overrides.json`'a yazıyor. TV'deki ana ekranda sağ üstteki **"⟳ Yenile"** butonuna (veya
+uzaktan kumandanın **yeşil tuşuna**) basınca, uygulama bu dosyayı GitHub'dan çekip kanal
+linklerini günceller — hiçbir yeniden kurulum gerekmez. Bir kanal yine de "Yayın açılamadı"
+derse, önce Yenile'yi dene; o da çözmezse bana söyle, script'i/seçici mantığı incelerim.
 
 ## Kanal listesini düzenlemek
 
@@ -142,6 +146,23 @@ npx ares-launch --device mytv-root com.yusuftalha.canlitv
 TV'nin Homebrew Channel uygulaması üzerinden ayarlarına girip SSH/Telnet sunucusunu
 kapatıp açabilirsin; kapatırsan `mytv-root` üzerinden erişim de kesilir (SSH sunucusu kapalıyken
 uygulamayı güncelleyemezsin, ama TV'de kurulu kalan uygulama etkilenmez/silinmez).
+
+## Otomatik link yenileme (GitHub Actions)
+
+Proje [github.com/corumyusuf153/webOS_canliTV](https://github.com/corumyusuf153/webOS_canliTV)
+adresinde barınıyor. `.github/workflows/refresh-tokens.yml`, her 4 saatte bir (ayrıca elle de
+tetiklenebilir: `gh workflow run refresh-tokens.yml`) `scripts/refresh-tokens.js`'i çalıştırıp
+her kanalın güncel `.m3u8` linkini `overrides.json`'a yazıyor ve repoya push'luyor.
+
+TV'deki uygulama, `js/app.js` içindeki `OVERRIDES_URL` (GitHub raw linki) üzerinden bu dosyayı
+çekiyor — "Yenile" butonuna/yeşil tuşa her basıldığında en güncel halini alıyor. Yani:
+
+- Bir kanal linki geçersiz olursa **en geç 4 saat içinde** otomatik düzeliyor (kullanıcı hiçbir
+  şey yapmasa bile bir sonraki "Yenile" basışında güncel linki alır).
+- `scripts/refresh-tokens.js` bir kanalı bulamazsa o kanalın eski (varsa) override'ı korunur,
+  hiçbir zaman `null`/boş ile ezilmez.
+- İstersen `overrides.json`'ı GitHub'da doğrudan da görebilirsin: taze halinin ham linki
+  `https://raw.githubusercontent.com/corumyusuf153/webOS_canliTV/main/overrides.json`.
 
 ## Bilgisayarda hızlı test (TV'ye yüklemeden önce)
 
