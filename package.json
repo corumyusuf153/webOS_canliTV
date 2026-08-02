@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@webos-tools/cli": "^3.2.5",
-    "hls.js": "^1.6.16"
+    "hls.js": "^1.6.16",
+    "playwright": "^1.62.1"
   }
 }
