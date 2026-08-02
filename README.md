@@ -164,16 +164,33 @@ TV'deki uygulama, `js/app.js` içindeki `OVERRIDES_URL` (GitHub raw linki) üzer
 - İstersen `overrides.json`'ı GitHub'da doğrudan da görebilirsin: taze halinin ham linki
   `https://raw.githubusercontent.com/corumyusuf153/webOS_canliTV/main/overrides.json`.
 
-### Bilinen istisnalar
+### IP'ye kilitli kanallar (cnnturk, atv, nowtv) — yerel otomasyon
 
-- **CNN Türk otomasyona dahil değil.** `duhnet.tv`'nin verdiği token, isteği yapan IP'ye
-  kilitleniyor — GitHub Actions'ın sunucusundan alınan bir link, TV'nin (farklı IP'deki)
-  isteğinde 403 ile reddediliyor. Bu yüzden CNN yalnızca **TV ile aynı ağdan** (yani bana
-  "CNN gitti" dediğinde, benim bilgisayarından çalıştırdığım bir oturumdan) yenilenebiliyor.
-- **Habertürk bazen "donuk" kalabilir** (aynı sahneyi tekrar tekrar oynatır) — bu bizim
-  token'ımızla ilgili değil, denediğimiz her güncel token'da da aynı donuk kareye rastladık;
-  büyük ihtimalle Habertürk'ün kendi canlı yayın altyapısındaki geçici bir sorun. Bu durumda
-  Yenile'ye basmak yardımcı olmaz, biraz bekleyip tekrar denemek gerekir.
+`cnnturk` (duhnet.tv), ve bazen `atv`/`nowtv` (ercdn.net) token'ları **isteği yapan IP'ye
+kilitli** oluyor — GitHub Actions'ın bulut sunucusundan alınan bir link, TV'nin (farklı
+IP'deki) isteğinde 403 ile reddediliyor. Bu üç kanal `.github/workflows/refresh-tokens.yml`'nin
+kanal listesinde **yok**, çünkü oradan hiçbir zaman düzeltilemezler.
+
+Bunun yerine bu bilgisayarda (TV ile aynı ev ağında) bir **launchd** görevi kuruldu:
+
+- Dosya: `~/Library/LaunchAgents/com.yusuftalha.canlitv.refresh.plist`
+- Her **30 dakikada bir** `scripts/run-local-refresh.sh`'i çalıştırır → bu da
+  `scripts/refresh-ip-locked.js` ile cnnturk/atv/nowtv'yi yeniden yakalayıp `overrides.json`'a
+  yazar ve GitHub'a push'lar.
+- Mac açık olduğu sürece arka planda çalışır, Mac her açılışında (login) otomatik başlar.
+- Loglar: `~/Library/Logs/canlitv-refresh/out.log` ve `err.log`.
+- Kontrol: `launchctl list | grep canlitv` (çalışıp çalışmadığını gösterir).
+- Durdurmak istersen: `launchctl unload ~/Library/LaunchAgents/com.yusuftalha.canlitv.refresh.plist`.
+
+**Bilgisayar kapalıyken bu üç kanal güncellenmiyor.** Mac uzun süre kapalı kalırsa ve TV'de
+bu kanallardan biri bozuksa, bana söylemen yeterli — elle tetiklerim.
+
+### Habertürk zaman zaman "donuk" kalabilir
+
+Aynı sahneyi tekrar tekrar oynatıyorsa bu bizim token'ımızla ilgili değil — denediğimiz her
+güncel token'da da aynı donuk kareye rastladık; büyük ihtimalle Habertürk'ün kendi canlı yayın
+altyapısındaki geçici bir sorun. Bu durumda Yenile'ye basmak yardımcı olmaz, biraz bekleyip
+tekrar denemek gerekir.
 
 ## Bilgisayarda hızlı test (TV'ye yüklemeden önce)
 
