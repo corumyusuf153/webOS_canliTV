@@ -5,6 +5,6 @@
   "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8muyem27m27o&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
   "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8muyevzvfka0&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
   "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8muyghtald7x&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
-  "cnnturk": "https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=RovKCGzRvfwPbzLeh9Mplw&e=1785729442",
-  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1785797641&st=oHrdKmYEa8h6wwJcjnUMAw"
+  "cnnturk": "https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=F7OU-5pLazVe89D6ZScL4g&e=1785759823",
+  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1785806611&st=Dg_RNUo1GO2u9NnBB048ag"
 }
