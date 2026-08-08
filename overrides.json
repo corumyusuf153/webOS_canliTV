@@ -1,10 +1,10 @@
 {
-  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8ndmukijjdho&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
-  "atv": "https://trkvz-live.ercdn.net/atvhd/atvhd_1080p.m3u8?st=RXwDup6t1NaOCZvSTRZufw&e=1786237646",
-  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8ndmvnabwnmm&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
-  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8ndmw6d4do9b&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
-  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8ndmwhqwn066&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
-  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8ndmxyz1b4fg&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
+  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8ne7jet74ze7&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
+  "atv": "https://securevideotoken.tmgrup.com.tr/webtv/secure?380407&url=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvhd%2Fatvhd.m3u8&url2=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvhd%2Fatvhd.m3u8",
+  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8ne7kjrp8qks&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
+  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8ne7l4p5mwy5&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
+  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8ne7lfszc7y8&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
+  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8ne7my1ntpsj&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
   "cnnturk": "https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=9kNZSxDeGjIrA0GB66YrvA&e=1786189724",
-  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1786249846&st=hLtCXaoc779wlvKDZ3eaDQ"
+  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1786263857&st=sQkrD6Ro9GUOaGPfZS-sxw"
 }
