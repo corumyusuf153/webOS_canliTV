@@ -1,10 +1,10 @@
 {
-  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8o1ze2hvnrp4&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
-  "atv": "https://trkvz-live.ercdn.net/atvhd/atvhd_1080p.m3u8?st=RuCbFtoURJqNgyOUlpyPOQ&e=1786827212",
-  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8o1zf6a3emsd&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
-  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8o1zfoj9m4oq&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
-  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8o1zg04ul85f&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
-  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8o1zhfz95kk4&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
+  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8o2l6f8aklmz&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
+  "atv": "https://trkvz-live.ercdn.net/atvhd/atvhd_1080p.m3u8?st=MfJSwFX9IKpqWAQpI8n18w&e=1786841866",
+  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8o2l7gpmn4mi&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
+  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8o2l813e4cax&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
+  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8o2l8cgtv8hf&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
+  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8o2l9uy87lkc&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
   "cnnturk": "https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=sZ7kNpc8YdEyJuFpcldJyQ&e=1786326068",
-  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1786839408&st=5oP2imSCm80icxtpn5-sGA"
+  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1786854131&st=0EkL2fImk8XjzlZqaLBWCw"
 }
