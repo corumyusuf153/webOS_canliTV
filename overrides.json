@@ -1,10 +1,10 @@
 {
-  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8vtnz8tp7h44&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
-  "atv": "https://trkvz-live.ercdn.net/atvhd/atvhd_1080p.m3u8?st=CTikMKAGsqRKALcklW8mpA&e=1793599396",
-  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8vto0cqz6noo&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
-  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8vto0umssr5s&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
-  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8vto19g04liy&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
-  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8vto2qlfn4p8&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
+  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8vuizbum3fcu&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
+  "atv": "https://securevideotoken.tmgrup.com.tr/webtv/secure?225492&url=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvhd%2Fatvhd.m3u8&url2=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvhd%2Fatvhd.m3u8",
+  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8vuj0doepdft&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
+  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8vuj0x48afhm&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
+  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8vuj1b5p58g8&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
+  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8vuj2tchvht7&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
   "cnnturk": "https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=sZ7kNpc8YdEyJuFpcldJyQ&e=1786326068",
-  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1793611533&st=ii8ZhkTRQqPIdEN7UjFQUw"
+  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1793632579&st=zwCKDgS6xo8_aOhO0SxkiA"
 }
