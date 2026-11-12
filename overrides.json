@@ -1,11 +1,11 @@
 {
-  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8wu2wjunhb33&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
-  "atv": "https://securevideotoken.tmgrup.com.tr/webtv/secure?950930&url=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvavrupa%2Fatvavrupa.m3u8&url2=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvavrupa%2Fatvavrupa.m3u8",
-  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8wu2xmdirc66&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
-  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8wu2y366vgb3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
-  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8wu2yfc1dalm&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
-  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8wu2zyvh1lpc&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
+  "showtv": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8?ex=1664766175&st=RBzhSuGauna0OGld-DJUVA&tv=1&sid=8wv3mhr32v3t&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&ce=3",
+  "atv": "https://securevideotoken.tmgrup.com.tr/webtv/secure?2691&url=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvavrupa%2Fatvavrupa.m3u8&url2=https%3A%2F%2Ftrkvz-live.ercdn.net%2Fatvavrupa%2Fatvavrupa.m3u8",
+  "kanald": "https://demiroren.daioncdn.net/kanald/kanald_1080p.m3u8?&sid=8wv3nlzlfnn7&app=da2109ea-5dfe-4107-89ab-23593336ed61&ce=3",
+  "startv": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?&sid=8wv3o3zcwnc1&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
+  "tv8": "https://tv8.daioncdn.net/tv8/tv8_1080p.m3u8?&sid=8wv3odzk653e&app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
+  "haberturk": "https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?sid=8wv3py6q1weg&app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
   "cnnturk": "https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=sZ7kNpc8YdEyJuFpcldJyQ&e=1786326068",
-  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1794493280&st=d90WlM7-WglADRhx8SVgvw",
+  "nowtv": "https://nowtv-live-ad.ercdn.net/nowtv/nowtv_720p.m3u8?e=1794518131&st=j72rjaHstRGpaHwyttYHFw",
   "ntv": "https://gcdn.2mdn.net/api/manifest/hls_variant/source/web_video_ads/id/a903beadb663ff0e/itag/0/playlist_type/LIVE/xpc/EgVovf3BOg%3D%3D/ctier/L/acao/yes/ip/0.0.0.0/ipbits/0/expire/1825694979/sparams/ip,ipbits,expire,source,id,itag,playlist_type,xpc,ctier,acao/signature/784E42C0E8329F93CBE431E5C2CA9C05B2564DD3.4E7638A388EB69E08A4EA7D42FAF93C549F351D0/key/ck2/file/index.m3u8"
 }
